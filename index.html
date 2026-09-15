@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee House</title>
-  </head>
-  <body>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+        <link
+            rel="stylesheet"
+            href="css/reset.css"
+        >
+        <link
+            rel="stylesheet"
+            href="css/variables.css"
+        >
+        <link
+            rel="stylesheet"
+            href="css/style.css"
+        >
+        <link
+            rel="icon"
+            href="assets/icons/favicon.png"
+            type="image/png"
+        >
+        <title>Coffee House</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img
+                    src="assets/icons/logo.svg"
+                    alt="Coffee House"
+                >
+            </a>
+            <button
+                class="burger"
+                type="button"
+                aria-label="Menu"
+                aria-expanded="false"
+                aria-controls="site-nav"
+            >
+            </button>
+            <nav id="site-nav">
+                <ul>
+                    <li><a href="index.html#favorite-coffee">Favorite coffee</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#mobile-app">Mobile app</a></li>
+                    <li><a href="menu.html#contact-us">Contact us</a></li>
+                </ul>
+            </nav>
+            <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch theme"
+                aria-pressed="false"
+            >
+            </button>
+            <a
+                class="menu-link"
+                href="menu.html"
+            >Menu</a>
+        </header>
+        <section
+            class="hero"
+            id="hero"
+        >h1, текст, ссылка на menu.html</section>
+        <main>
+            <section id="favorite-coffee">h2 + 3 слайда + кнопки слайдера</section>
+            <section id="about">h2 + текст + фото</section>
+            <section id="mobile-app">h2 + текст + ссылки на магазины</section>
+        </main>
+        <footer id="contacts">адрес, телефон, соцсети</footer>
+        <script src="js/theme.js"></script>
+    </body>
 </html>
