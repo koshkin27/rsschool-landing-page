@@ -56,3 +56,8 @@ h3,
   margin: 0;
   padding: 0;
 }
+
+.coffee-about__image {
+  width: 726px;
+  height: 726px;
+}
