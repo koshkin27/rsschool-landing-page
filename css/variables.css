@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: optional;
+  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  font-display: optional;
+  src: url("../assets/fonts/inter-latin-italic-600.woff2") format("woff2");
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+
+  /* headings */
+  --font-size-h1: 72px;
+  --font-weight-h1: 600;
+  --line-height-h1: 1.05;
+  --font-style-h1-accent: italic;
+
+  --font-size-h2: 60px;
+  --font-weight-h2: 600;
+  --line-height-h2: 1.25;
+  --font-style-h2-accent: italic;
+
+  --font-size-h3: 24px;
+  --font-weight-h3: 600;
+  --line-height-h3: 1.25;
+
+  /* body */
+  --font-size-body-medium: 16px;
+  --font-weight-body-medium: 400;
+  --line-height-body-medium: 1.5;
+
+  --font-size-body-caption: 10px;
+  --font-weight-body-caption: 600;
+  --line-height-body-caption: 1.4;
+
+  /* action */
+  --font-size-link-and-button: 16px;
+  --font-weight-link-and-button: 600;
+  --line-height-link-and-button: 1.5;
+
+  --font-size-burger-link: 32px;
+  --font-weight-burger-link: 600;
+  --line-height-burger-link: 1.25;
+}

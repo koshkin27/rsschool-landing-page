@@ -1,3 +1,45 @@
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body-medium);
+  font-weight: var(--font-weight-body-medium);
+  line-height: var(--line-height-body-medium);
+  font-synthesis: none;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  line-height: var(--line-height-h1);
+}
+
+h1 .accent {
+  font-style: var(--font-style-h1-accent);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  line-height: var(--line-height-h2);
+}
+
+h2 .accent {
+  font-style: var(--font-style-h2-accent);
+}
+
+h3,
+.coffee-slider__price {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+  line-height: var(--line-height-h3);
+}
+
+#site-nav a,
+.menu-link {
+  font-size: var(--font-size-link-and-button);
+  font-weight: var(--font-weight-link-and-button);
+  line-height: var(--line-height-link-and-button);
+}
+
 .hero-image {
   width: 1360px;
   height: 644px;

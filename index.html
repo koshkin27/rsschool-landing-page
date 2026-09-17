@@ -3,6 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="assets/fonts/inter-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/inter-latin-italic-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -36,13 +50,13 @@
       <section class="hero" id="hero">
         <img class="hero-image" src="assets/images/coffee-hero.png" alt="Coffee image" />
         <div class="hero-content">
-          <h1>Enjoy premium coffee at our charming cafe</h1>
+          <h1><span class="accent">Enjoy</span> premium coffee at our charming cafe</h1>
           <p>
             With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular
             destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
             beverage.
           </p>
-          <a href="menu.html" class="button">Menu</a>
+          <a class="menu-link button" href="menu.html">Menu</a>
         </div>
       </section>
       <section id="favorite-coffee">
@@ -53,7 +67,6 @@
             type="button"
             aria-label="Previous coffee"
             aria-controls="favorite-slider"
-            aria-pressed="false"
           >
             <img src="assets/icons/button-icon-dark-back.svg" alt="" />
           </button>
@@ -98,7 +111,6 @@
             type="button"
             aria-label="Next coffee"
             aria-controls="favorite-slider"
-            aria-pressed="false"
           >
             <img src="assets/icons/button-icon-dark-next.svg" alt="" />
           </button>
