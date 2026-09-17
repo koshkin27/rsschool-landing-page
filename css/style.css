@@ -1,0 +1,16 @@
+.hero-image {
+  width: 1360px;
+  height: 644px;
+  border-radius: 40px;
+}
+
+.coffee-slider__image {
+  width: 348px;
+  height: 348px;
+}
+
+.coffee-slider__track {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

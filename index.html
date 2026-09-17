@@ -1,76 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        >
-        <link
-            rel="stylesheet"
-            href="css/reset.css"
-        >
-        <link
-            rel="stylesheet"
-            href="css/variables.css"
-        >
-        <link
-            rel="stylesheet"
-            href="css/style.css"
-        >
-        <link
-            rel="icon"
-            href="assets/icons/favicon.png"
-            type="image/png"
-        >
-        <title>Coffee House</title>
-    </head>
-    <body>
-        <header>
-            <a href="index.html">
-                <img
-                    src="assets/icons/logo.svg"
-                    alt="Coffee House"
-                >
-            </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png" />
+    <title>Coffee House</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="assets/icons/logo.svg" alt="Coffee House" />
+      </a>
+      <button
+        class="burger"
+        type="button"
+        aria-label="Menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      ></button>
+      <nav id="site-nav">
+        <ul>
+          <li><a href="index.html#favorite-coffee">Favorite coffee</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#mobile-app">Mobile app</a></li>
+          <li><a href="menu.html#contact-us">Contact us</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"></button>
+      <a class="menu-link" href="menu.html">Menu</a>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <img class="hero-image" src="assets/images/coffee-hero.png" alt="Coffee image" />
+        <div class="hero-content">
+          <h1>Enjoy premium coffee at our charming cafe</h1>
+          <p>
+            With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular
+            destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
+            beverage.
+          </p>
+          <a href="menu.html" class="button">Menu</a>
+        </div>
+      </section>
+      <section id="favorite-coffee">
+        <h2>Choose your <span class="accent">favorite</span> coffee</h2>
+        <div class="coffee-slider">
+          <button
+            class="coffee-slider__btn coffee-slider__btn--back"
+            type="button"
+            aria-label="Previous coffee"
+            aria-controls="favorite-slider"
+            aria-pressed="false"
+          >
+            <img src="assets/icons/button-icon-dark-back.svg" alt="" />
+          </button>
+          <div class="coffee-slider__viewport" id="favorite-slider">
+            <ul class="coffee-slider__track">
+              <li class="coffee-slider__slide">
+                <article>
+                  <img class="coffee-slider__image" src="assets/images/coffee-slider-1.png" alt="" />
+                  <h3>S'mores Frappuccino</h3>
+                  <p>
+                    This new drink takes an espresso and mixes it with brown sugar and cinnamon before being
+                    topped with oat milk.
+                  </p>
+                  <p class="coffee-slider__price">$5.50</p>
+                </article>
+              </li>
+              <li class="coffee-slider__slide">
+                <article>
+                  <img class="coffee-slider__image" src="assets/images/coffee-slider-2.png" alt="" />
+                  <h3>Caramel Macchiato</h3>
+                  <p>
+                    Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under
+                    whipped thick foam.
+                  </p>
+                  <p class="coffee-slider__price">$5.00</p>
+                </article>
+              </li>
+              <li class="coffee-slider__slide">
+                <article>
+                  <img class="coffee-slider__image" src="assets/images/coffee-slider-3.png" alt="" />
+                  <h3>Ice coffee</h3>
+                  <p>
+                    A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
+                  </p>
+                  <p class="coffee-slider__price">$4.50</p>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="coffee-slider__btn coffee-slider__btn--next"
+            type="button"
+            aria-label="Next coffee"
+            aria-controls="favorite-slider"
+            aria-pressed="false"
+          >
+            <img src="assets/icons/button-icon-dark-next.svg" alt="" />
+          </button>
+          <div class="coffee-slider__dots">
             <button
-                class="burger"
-                type="button"
-                aria-label="Menu"
-                aria-expanded="false"
-                aria-controls="site-nav"
-            >
-            </button>
-            <nav id="site-nav">
-                <ul>
-                    <li><a href="index.html#favorite-coffee">Favorite coffee</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#mobile-app">Mobile app</a></li>
-                    <li><a href="menu.html#contact-us">Contact us</a></li>
-                </ul>
-            </nav>
-            <button
-                class="theme-toggle"
-                type="button"
-                aria-label="Switch theme"
-                aria-pressed="false"
-            >
-            </button>
-            <a
-                class="menu-link"
-                href="menu.html"
-            >Menu</a>
-        </header>
-        <section
-            class="hero"
-            id="hero"
-        >h1, текст, ссылка на menu.html</section>
-        <main>
-            <section id="favorite-coffee">h2 + 3 слайда + кнопки слайдера</section>
-            <section id="about">h2 + текст + фото</section>
-            <section id="mobile-app">h2 + текст + ссылки на магазины</section>
-        </main>
-        <footer id="contacts">адрес, телефон, соцсети</footer>
-        <script src="js/theme.js"></script>
-    </body>
+              class="coffee-slider__dot"
+              type="button"
+              aria-label="Go to slide 1"
+              aria-current="true"
+            ></button>
+            <button class="coffee-slider__dot" type="button" aria-label="Go to slide 2"></button>
+            <button class="coffee-slider__dot" type="button" aria-label="Go to slide 3"></button>
+          </div>
+        </div>
+      </section>
+      <section id="about">h2 + текст + фото</section>
+      <section id="mobile-app">h2 + текст + ссылки на магазины</section>
+    </main>
+    <footer id="contacts">адрес, телефон, соцсети</footer>
+    <script src="js/theme.js"></script>
+  </body>
 </html>
