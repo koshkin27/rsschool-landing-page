@@ -57,7 +57,21 @@ h3,
   padding: 0;
 }
 
+.coffee-about__gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
 .coffee-about__image {
-  width: 726px;
-  height: 726px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.coffee-about {
+  max-width: 1360px;
+  margin-inline: auto;
 }
