@@ -34,7 +34,7 @@
           <li><a href="index.html#favorite-coffee">Favorite coffee</a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#mobile-app">Mobile app</a></li>
-          <li><a href="menu.html#contact-us">Contact us</a></li>
+          <li><a href="index.html#contact-us">Contact us</a></li>
         </ul>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"></button>
@@ -132,9 +132,107 @@
           <img class="coffee-about__image" src="assets/images/about-4.png" alt="Couple with coffee" />
         </div>
       </section>
-      <section id="mobile-app">h2 + текст + ссылки на магазины</section>
+      <section class="mobile-app" id="mobile-app">
+        <div class="mobile-app__content">
+          <h2><span class="accent">Download</span> our app to start ordering</h2>
+          <p>
+            Download the Resource app today and experience the comfort of ordering your favorite coffee from
+            wherever you are
+          </p>
+          <div class="mobile-app__stores">
+            <a
+              class="store-link"
+              href="https://www.apple.com/app-store/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icons/apple-logo.svg" alt="" />
+              <span class="store-link__text">
+                <span class="store-link__caption">Available on the</span>
+                <span class="store-link__name">App Store</span>
+              </span>
+            </a>
+            <a
+              class="store-link"
+              href="https://play.google.com/store/apps"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="assets/icons/android-logo.svg" alt="" />
+              <span class="store-link__text">
+                <span class="store-link__caption">Available on the</span>
+                <span class="store-link__name">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <img
+          class="mobile-app__image"
+          src="assets/images/mobile-screens.png"
+          alt="Resource app on two phones"
+        />
+      </section>
     </main>
-    <footer id="contacts">адрес, телефон, соцсети</footer>
+    <footer class="footer" id="contact-us">
+      <div class="footer__offer">
+        <h2>Sip, Savor, Smile. <span class="accent">It's coffee time!</span></h2>
+        <ul class="footer__socials">
+          <li>
+            <a
+              class="footer__social"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <img src="assets/icons/twitter.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer__social"
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <img src="assets/icons/inst.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              class="footer__social"
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <img src="assets/icons/facebook.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <h3>Contact us</h3>
+        <a
+          class="footer__contact"
+          href="https://www.google.com/maps/search/?api=1&query=8558+Green+Rd.,+LA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="assets/icons/pin.svg" alt="" />
+          <span>8558 Green Rd., LA</span>
+        </a>
+        <a class="footer__contact" href="tel:+16035550123">
+          <img src="assets/icons/phone.svg" alt="" />
+          <span>+1 (603) 555-0123</span>
+        </a>
+        <p class="footer__hours">
+          <img src="assets/icons/clock.svg" alt="" />
+          <span>Mon-Sat: 9:00 AM – 23:00 PM</span>
+        </p>
+      </div>
+    </footer>
     <script src="js/theme.js"></script>
   </body>
 </html>

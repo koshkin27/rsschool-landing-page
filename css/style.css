@@ -40,6 +40,12 @@ h3,
   line-height: var(--line-height-link-and-button);
 }
 
+.store-link__caption {
+  font-size: var(--font-size-body-caption);
+  font-weight: var(--font-weight-body-caption);
+  line-height: var(--line-height-body-caption);
+}
+
 .hero-image {
   width: 1360px;
   height: 644px;
@@ -74,4 +80,91 @@ h3,
 .coffee-about {
   max-width: 1360px;
   margin-inline: auto;
+}
+
+.mobile-app {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1360px;
+  margin-inline: auto;
+}
+.mobile-app__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 0;
+}
+.mobile-app__image {
+  display: block;
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.mobile-app__stores {
+  display: flex;
+  gap: 20px;
+}
+
+.store-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.store-link__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.store-link img {
+  flex-shrink: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1360px;
+  margin-inline: auto;
+}
+
+.footer__offer,
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 1 1 0;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social,
+.footer__contact,
+.footer__hours {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__social img,
+.footer__contact img,
+.footer__hours img {
+  display: block;
+  flex-shrink: 0;
 }
