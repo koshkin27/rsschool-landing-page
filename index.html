@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,8 +18,8 @@
     <title>Coffee House</title>
   </head>
   <body>
-    <header>
-      <a href="index.html">
+    <header class="header">
+      <a class="header__logo" href="index.html">
         <img src="assets/icons/logo.svg" alt="Coffee House" />
       </a>
       <button
@@ -28,13 +28,17 @@
         aria-label="Menu"
         aria-expanded="false"
         aria-controls="site-nav"
-      ></button>
-      <nav id="site-nav">
-        <ul>
-          <li><a href="index.html#favorite-coffee">Favorite coffee</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#mobile-app">Mobile app</a></li>
-          <li><a href="index.html#contact-us">Contact us</a></li>
+      >
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav" id="site-nav">
+        <ul class="nav__list">
+          <li><a href="#favorite-coffee">Favorite coffee</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#mobile-app">Mobile app</a></li>
+          <li><a href="#contact-us">Contact us</a></li>
         </ul>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"></button>
@@ -42,7 +46,7 @@
     </header>
     <main>
       <section class="hero" id="hero">
-        <img class="hero-image" src="assets/images/coffee-hero.png" alt="Coffee image" />
+        <img class="hero-image" src="assets/images/coffee-hero.png" alt="" />
         <div class="hero-content">
           <h1><span class="accent">Enjoy</span> premium coffee at our charming cafe</h1>
           <p>
@@ -53,7 +57,7 @@
           <a class="menu-link button" href="menu.html">Menu</a>
         </div>
       </section>
-      <section id="favorite-coffee">
+      <section class="favorites" id="favorite-coffee">
         <h2>Choose your <span class="accent">favorite</span> coffee</h2>
         <div class="coffee-slider">
           <button
@@ -137,7 +141,7 @@
           <h2><span class="accent">Download</span> our app to start ordering</h2>
           <p>
             Download the Resource app today and experience the comfort of ordering your favorite coffee from
-            wherever you are
+            wherever you are.
           </p>
           <div class="mobile-app__stores">
             <a

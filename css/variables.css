@@ -49,4 +49,22 @@
   --font-size-burger-link: 32px;
   --font-weight-burger-link: 600;
   --line-height-burger-link: 1.25;
+
+  --color-bg: #e1d4c9;
+  --color-text: #403f3d;
+  --color-accent: #b0907a;
+  --color-hero-text: #e1d4c9;
+  --color-border: #403f3d;
+
+  --container: 1360px;
+  --page-padding: 40px;
+  --section-gap: 100px;
+  --radius-lg: 40px;
+  --radius-md: 20px;
+}
+
+[data-theme="dark"] {
+  --color-bg: #403f3d;
+  --color-text: #e1d4c9;
+  --color-border: #e1d4c9;
 }
