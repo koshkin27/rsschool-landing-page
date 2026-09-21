@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: optional;
+  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  font-display: optional;
+  src: url("../assets/fonts/inter-latin-italic-600.woff2") format("woff2");
+}
+
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --font-size-h1: 72px;
+  --font-weight-h1: 600;
+  --line-height-h1: 1.05;
+
+  --font-size-h2: 60px;
+  --font-weight-h2: 600;
+  --line-height-h2: 1.25;
+
+  --font-size-h3: 24px;
+  --font-weight-h3: 600;
+  --line-height-h3: 1.25;
+
+  --font-size-body-medium: 16px;
+  --font-weight-body-medium: 400;
+  --line-height-body-medium: 1.5;
+
+  --font-size-body-caption: 10px;
+  --font-weight-body-caption: 600;
+  --line-height-body-caption: 1.4;
+
+  --font-size-link-and-button: 16px;
+  --font-weight-link-and-button: 600;
+  --line-height-link-and-button: 1.5;
+
+  --color-bg: #e1d4c9;
+  --color-text: #403f3d;
+  --color-text-inverse: #e1d4c9;
+  --color-accent: #b0907a;
+  --color-container: #665f55;
+  --color-border: #c1b6ad;
+  --color-border-strong: #665f55;
+
+  --container: 1360px;
+  --page-padding: 40px;
+  --section-gap: 100px;
+  --header-height: 100px;
+  --radius-lg: 40px;
+  --radius-md: 20px;
+  --radius-pill: 100px;
+  --transition: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --color-bg: #292826;
+  --color-text: #e1d4c9;
+  --color-text-inverse: #e1d4c9;
+  --color-accent: #b0907a;
+  --color-container: #403f3d;
+  --color-border: #665f55;
+  --color-border-strong: #c1b6ad;
+}
