@@ -1,38 +1,26 @@
 <!doctype html>
 <html lang="en" data-theme="light">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link
       rel="preload"
       href="assets/fonts/inter-latin-italic-600.woff2"
       as="font"
       type="font/woff2"
-      crossorigin
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="assets/icons/favicon.png" type="image/png" />
+      crossorigin>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png">
     <title>Coffee House</title>
   </head>
   <body>
     <header class="header">
       <a class="header__logo" href="index.html">
-        <img src="assets/icons/logo.svg" alt="Coffee House" />
+        <img src="assets/icons/logo.svg" alt="Resource coffee house">
       </a>
-      <button
-        class="burger"
-        type="button"
-        aria-label="Menu"
-        aria-expanded="false"
-        aria-controls="site-nav"
-      >
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </button>
       <nav class="nav" id="site-nav">
         <ul class="nav__list">
           <li><a href="#favorite-coffee">Favorite coffee</a></li>
@@ -40,39 +28,108 @@
           <li><a href="#mobile-app">Mobile app</a></li>
           <li><a href="#contact-us">Contact us</a></li>
         </ul>
+        <a class="menu-link menu-link--nav" href="menu.html">
+          Menu
+          <svg class="icon-cup" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path
+              d="M4 4.5h9.5v6.25A3.75 3.75 0 0 1 9.75 14.5H7.75A3.75 3.75 0 0 1 4 10.75V4.5Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path d="M13.5 7h1.25a2 2 0 1 1 0 4H13.5" stroke="currentColor" stroke-width="1.5" />
+            <path d="M6 16.5h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false"></button>
-      <a class="menu-link" href="menu.html">Menu</a>
+      <div class="header__actions">
+        <button class="theme-switch" type="button" aria-label="Switch theme" aria-pressed="false">
+          <span class="theme-switch__option theme-switch__option--light" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="3.25" stroke="currentColor" stroke-width="1.5" />
+              <path
+                d="M10 2.5v1.5M10 16v1.5M2.5 10H4M16 10h1.5M4.7 4.7l1.1 1.1M14.2 14.2l1.1 1.1M15.3 4.7l-1.1 1.1M5.8 14.2l-1.1 1.1"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span class="theme-switch__option theme-switch__option--dark" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path
+                d="M9 0C4.03 0 0 4.03 0 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36C16.92 9.01 15.32 9.9 13.5 9.9 10.52 9.9 8.1 7.48 8.1 4.5c0-1.81.89-3.42 2.26-4.4C9.92.04 9.46 0 9 0Z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+        </button>
+        <a class="menu-link menu-link--header" href="menu.html">
+          Menu
+          <svg class="icon-cup" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path
+              d="M4 4.5h9.5v6.25A3.75 3.75 0 0 1 9.75 14.5H7.75A3.75 3.75 0 0 1 4 10.75V4.5Z"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <path d="M13.5 7h1.25a2 2 0 1 1 0 4H13.5" stroke="currentColor" stroke-width="1.5" />
+            <path d="M6 16.5h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </a>
+        <button class="burger" type="button" aria-label="Menu">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
     </header>
+
     <main>
       <section class="hero" id="hero">
-        <img class="hero-image" src="assets/images/coffee-hero.png" alt="" />
-        <div class="hero-content">
+        <img class="hero__media" src="assets/images/coffee-hero.png" alt="">
+        <div class="hero__content">
           <h1><span class="accent">Enjoy</span> premium coffee at our charming cafe</h1>
           <p>
             With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular
             destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
             beverage.
           </p>
-          <a class="menu-link button" href="menu.html">Menu</a>
+          <a class="button button--primary" href="menu.html">
+            Menu
+            <svg class="icon-cup" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path
+                d="M4 4.5h9.5v6.25A3.75 3.75 0 0 1 9.75 14.5H7.75A3.75 3.75 0 0 1 4 10.75V4.5Z"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <path d="M13.5 7h1.25a2 2 0 1 1 0 4H13.5" stroke="currentColor" stroke-width="1.5" />
+              <path d="M6 16.5h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </a>
         </div>
       </section>
+
       <section class="favorites" id="favorite-coffee">
         <h2>Choose your <span class="accent">favorite</span> coffee</h2>
         <div class="coffee-slider">
           <button
-            class="coffee-slider__btn coffee-slider__btn--back"
+            class="circle-btn coffee-slider__btn coffee-slider__btn--back"
             type="button"
             aria-label="Previous coffee"
-            aria-controls="favorite-slider"
           >
-            <img src="assets/icons/button-icon-dark-back.svg" alt="" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M16 12H7.5M11.5 6 6.5 12l5 6"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
-          <div class="coffee-slider__viewport" id="favorite-slider">
+          <div class="coffee-slider__viewport">
             <ul class="coffee-slider__track">
               <li class="coffee-slider__slide">
                 <article>
-                  <img class="coffee-slider__image" src="assets/images/coffee-slider-1.png" alt="" />
+                  <img class="coffee-slider__image" src="assets/images/coffee-slider-1.png" alt="S'mores Frappuccino">
                   <h3>S'mores Frappuccino</h3>
                   <p>
                     This new drink takes an espresso and mixes it with brown sugar and cinnamon before being
@@ -83,7 +140,7 @@
               </li>
               <li class="coffee-slider__slide">
                 <article>
-                  <img class="coffee-slider__image" src="assets/images/coffee-slider-2.png" alt="" />
+                  <img class="coffee-slider__image" src="assets/images/coffee-slider-2.png" alt="Caramel Macchiato">
                   <h3>Caramel Macchiato</h3>
                   <p>
                     Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under
@@ -94,48 +151,72 @@
               </li>
               <li class="coffee-slider__slide">
                 <article>
-                  <img class="coffee-slider__image" src="assets/images/coffee-slider-3.png" alt="" />
+                  <img class="coffee-slider__image" src="assets/images/coffee-slider-3.png" alt="Ice coffee">
                   <h3>Ice coffee</h3>
-                  <p>
-                    A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.
-                  </p>
+                  <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
                   <p class="coffee-slider__price">$4.50</p>
                 </article>
               </li>
             </ul>
           </div>
           <button
-            class="coffee-slider__btn coffee-slider__btn--next"
+            class="circle-btn coffee-slider__btn coffee-slider__btn--next"
             type="button"
             aria-label="Next coffee"
-            aria-controls="favorite-slider"
           >
-            <img src="assets/icons/button-icon-dark-next.svg" alt="" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path
+                d="M8 12h8.5M12.5 6l5 6-5 6"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </button>
           <div class="coffee-slider__dots">
-            <button
-              class="coffee-slider__dot"
-              type="button"
-              aria-label="Go to slide 1"
-              aria-current="true"
-            ></button>
-            <button class="coffee-slider__dot" type="button" aria-label="Go to slide 2"></button>
-            <button class="coffee-slider__dot" type="button" aria-label="Go to slide 3"></button>
+            <button class="coffee-slider__dot is-active" type="button" aria-label="Go to slide 1">
+              <span class="coffee-slider__progress"></span>
+            </button>
+            <button class="coffee-slider__dot" type="button" aria-label="Go to slide 2">
+              <span class="coffee-slider__progress"></span>
+            </button>
+            <button class="coffee-slider__dot" type="button" aria-label="Go to slide 3">
+              <span class="coffee-slider__progress"></span>
+            </button>
           </div>
         </div>
       </section>
+
       <section class="coffee-about" id="about">
         <h2>
           Resource is <span class="accent">the perfect and cozy place</span> where you can enjoy a variety of
           hot beverages, relax, catch up with friends, or get some work done.
         </h2>
         <div class="coffee-about__gallery">
-          <img class="coffee-about__image" src="assets/images/about-1.png" alt="Girl with coffee" />
-          <img class="coffee-about__image" src="assets/images/about-3.png" alt="Man with laptop and coffee" />
-          <img class="coffee-about__image" src="assets/images/about-2.png" alt="Cup on table" />
-          <img class="coffee-about__image" src="assets/images/about-4.png" alt="Couple with coffee" />
+          <div class="coffee-about__col">
+            <img
+              class="coffee-about__image coffee-about__image--tall"
+              src="assets/images/about-1.png"
+              alt="Girl with coffee">
+            <img
+              class="coffee-about__image coffee-about__image--short"
+              src="assets/images/about-2.png"
+              alt="Cup on table">
+          </div>
+          <div class="coffee-about__col">
+            <img
+              class="coffee-about__image coffee-about__image--short"
+              src="assets/images/about-3.png"
+              alt="Man with laptop and coffee">
+            <img
+              class="coffee-about__image coffee-about__image--tall"
+              src="assets/images/about-4.png"
+              alt="Couple with coffee">
+          </div>
         </div>
       </section>
+
       <section class="mobile-app" id="mobile-app">
         <div class="mobile-app__content">
           <h2><span class="accent">Download</span> our app to start ordering</h2>
@@ -150,7 +231,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="assets/icons/apple-logo.svg" alt="" />
+              <img src="assets/icons/apple-logo.svg" alt="">
               <span class="store-link__text">
                 <span class="store-link__caption">Available on the</span>
                 <span class="store-link__name">App Store</span>
@@ -162,7 +243,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="assets/icons/android-logo.svg" alt="" />
+              <img src="assets/icons/android-logo.svg" alt="">
               <span class="store-link__text">
                 <span class="store-link__caption">Available on the</span>
                 <span class="store-link__name">Google Play</span>
@@ -173,45 +254,59 @@
         <img
           class="mobile-app__image"
           src="assets/images/mobile-screens.png"
-          alt="Resource app on two phones"
-        />
+          alt="Resource app on two phones">
       </section>
     </main>
+
     <footer class="footer" id="contact-us">
       <div class="footer__offer">
         <h2>Sip, Savor, Smile. <span class="accent">It's coffee time!</span></h2>
         <ul class="footer__socials">
           <li>
             <a
-              class="footer__social"
+              class="circle-btn footer__social"
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
             >
-              <img src="assets/icons/twitter.svg" alt="" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M19.5 6.1c-.6.3-1.3.5-2 .6.7-.4 1.3-1.1 1.6-1.9-.7.4-1.5.7-2.3.9A3.3 3.3 0 0 0 12 8.8c0 .3 0 .5.1.8-2.8-.1-5.2-1.5-6.8-3.5-.3.5-.4 1.1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1.1-.2-1.5-.4v.1c0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.2 3 2.3A6.7 6.7 0 0 1 5 17.3 9.4 9.4 0 0 0 10.1 19c6.1 0 9.5-5.1 9.5-9.5v-.4c.7-.5 1.3-1.1 1.7-1.8-.6.3-1.2.5-1.8.5Z"
+                  fill="currentColor"
+                />
+              </svg>
             </a>
           </li>
           <li>
             <a
-              class="footer__social"
+              class="circle-btn footer__social"
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <img src="assets/icons/inst.svg" alt="" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="4" y="4" width="16" height="16" rx="5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="16.5" cy="7.5" r="0.75" fill="currentColor" />
+              </svg>
             </a>
           </li>
           <li>
             <a
-              class="footer__social"
+              class="circle-btn footer__social"
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <img src="assets/icons/facebook.svg" alt="" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.2l.8-3H13v-2c0-.6.4-1 1-1Z"
+                  fill="currentColor"
+                />
+              </svg>
             </a>
           </li>
         </ul>
@@ -220,23 +315,24 @@
         <h3>Contact us</h3>
         <a
           class="footer__contact"
-          href="https://www.google.com/maps/search/?api=1&query=8558+Green+Rd.,+LA"
+          href="https://www.google.com/maps/search/?api=1&amp;query=8558+Green+Rd.,+LA"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="assets/icons/pin.svg" alt="" />
+          <img src="assets/icons/pin.svg" alt="">
           <span>8558 Green Rd., LA</span>
         </a>
         <a class="footer__contact" href="tel:+16035550123">
-          <img src="assets/icons/phone.svg" alt="" />
+          <img src="assets/icons/phone.svg" alt="">
           <span>+1 (603) 555-0123</span>
         </a>
         <p class="footer__hours">
-          <img src="assets/icons/clock.svg" alt="" />
+          <img src="assets/icons/clock.svg" alt="">
           <span>Mon-Sat: 9:00 AM – 23:00 PM</span>
         </p>
       </div>
     </footer>
+
     <script src="js/theme.js"></script>
   </body>
 </html>

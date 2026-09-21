@@ -1,6 +1,6 @@
 const storageKey = "theme";
 const root = document.documentElement;
-const toggle = document.querySelector(".theme-toggle");
+const toggle = document.querySelector(".theme-switch");
 
 function applyTheme(theme) {
   root.dataset.theme = theme;
